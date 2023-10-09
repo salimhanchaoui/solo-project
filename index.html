@@ -8,23 +8,23 @@
     <title>quizz game</title>
 </head>
 <body>
-    <nav id="cont1">
-    <h1 id="title">Guess The Flag</h1>
-    <h2 id="score">score: <span>0</span></h2>
-</nav>
-<div id="bodycont">
-<nav id="cont2">
-    <div id="butdiv">
-    <img id="gameimg" src="https://th.bing.com/th/id/OIP.JoenChSAZlRtogGHCIELqgHaE7?pid=ImgDet&rs=1" alt="danemark flag"> 
- <button id="button1">Next</button>
-</div>
- <div id="prop">
-    <div class="prop1" id="1"><h1 id="p1" class="pr"></h1></div>
-    <div class="prop1" id="2"><h1 id="p2" class="pr"></h1></div>
-    <div class="prop1" id="3"><h1 id="p3" class="pr"></h1></div>
-    <div class="prop1" id="4"><h1 id="p4" class="pr"></h1></div>
-</div>
-</nav></div>
-<script src="index.js"></script>
+    <div id="cont1" style="display: flex;justify-content: space-evenly;">
+        <h1 id="title">GUESS THE FLAG</h1>
+        <h2 id="score">score: <span>0</span></h2>
+        <h2 id="tries">tries: <span>3</span></h2>
+    </div>
+        <div id="cont2">
+            <div id="butdiv">
+                <img id="gameimg"  alt="danemark flag"> 
+                <button id="button1">Next</button>
+            </div>
+            <div id="prop">
+                <button class="prop1" id="1"><h1 id="p1" class="pr"></h1></button>
+                <button class="prop1" id="2"><h1 id="p2" class="pr"></h1></button>
+                <button class="prop1" id="3"><h1 id="p3" class="pr"></h1></button>
+                <button class="prop1" id="4"><h1 id="p4" class="pr"></h1></button>
+            </div>
+        </div>
+    <script src="index.js"></script>
 </body>
 </html>

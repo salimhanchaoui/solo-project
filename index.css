@@ -14,6 +14,7 @@
     border-width: 2px;
     margin-bottom:5px ;
     box-shadow: 2px 2px 4px rgb(42, 42, 42);
+    width: 1440px;
 }
 #score{
     display: flex;
@@ -22,62 +23,69 @@
     font-size: 40px;
     font-family: monospace;
 }
+#tries{
+    display: flex;
+    color:white;
+    justify-content: center;
+    font-size: 40px;
+    font-family: monospace;
+}
 #cont2{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color:rgba(254, 182, 0, 0.289) ;
-    border: solid;
-    border-color: white;
+    border: 2px solid white;
     border-radius: 20px;
-    border-width: 2px;
-    width: 1000px;
+    width: 65%;
     height: 550px;  
     margin-top:5px ;
     box-shadow: 2px 2px 4px rgb(42, 42, 42) ;
-}
-#bodycont{
-    display: grid;
-    justify-content: center;
 }
 
 body{
     background-size: cover;
     background-image:url("https://avante.biz/wp-content/uploads/World-Map-Desktop-wallpaper-1920x1080/World-Map-Desktop-wallpaper-1920x108038.jpg") ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #back{
   size: cover;
 }
 
 #prop{
- display: grid;
-grid-template-rows: auto ;
-grid-template-columns: auto ;
- grid-gap: 10px 10px;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
  margin-top: 20px;
+ gap: 20px;
 }
 
 .prop1{
-    background-color: rgb(169, 190, 209);
     width: 150px;
     height: 70px;
-    border: solid;
-    border-radius: 20px;
-    margin-right: 40px;
-    border-color: white;
-    text-align: center;
+    border: 2px solid white;
+    background-color: rgb(169, 190, 209);
+    cursor: pointer;
+    border-radius: 15px;
     box-shadow: 2px 2px 4px rgb(42, 42, 42) ;
 }
 
+.prop1:hover {
+    scale: 1.1;
+    background-color: rgb(112, 180, 239);
+}
+
 #gameimg{
-    margin-top: 100px;
+    box-shadow: 2px 2px 4px rgb(42, 42, 42) ;
     width: 350px;
     height :250px;
-   margin-right: 200px;
-   border: solid;
-   border-width: 5px;
-   border-color:  white;
-   border-radius: 20px;
-   box-shadow: 2px 2px 4px rgb(42, 42, 42) ;
+    border: 5px solid white;
+    border-radius: 15px;
 }
 .pr{
     color: white;
@@ -87,19 +95,18 @@ grid-template-columns: auto ;
     justify-content: center;
 }
 #butdiv{
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
 }
 #button1{
     width: 150px;
     height: 60px;
-    border: solid;
-    border-color: azure;
-    border-radius: 20px;
-    color: white;
-    background-color:rgb(169, 190, 209) ;
-    margin-left: 100px;
-    font-size: 30px;
-    font-family: monospace;
-    text-align: center;
     box-shadow: 2px 2px 4px rgb(42, 42, 42) ;
+    cursor: pointer;
+    font-size: 18px;
+    color: black;
+    border-radius: 15px;
 }
