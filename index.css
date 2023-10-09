@@ -1,0 +1,52 @@
+#title{
+    color: rgb(1, 74, 138);
+    display: flex;
+   justify-content: center;
+    font-size: 50px;
+    font-family: monospace;
+}
+#cont1{
+    background-color: rgba(254, 182, 0, 0.289);
+    padding:1px;
+    border: solid;
+    border-color: rgb(1, 74, 138);
+    border-radius: 50px;
+    border-width: 2px;
+    margin-bottom:5px ;
+}
+#score{
+    display: flex;
+    color: rgb(1, 74, 138);
+    justify-content: center;
+    font-size: 40px;
+    font-family: monospace;
+}
+#cont2{
+    display: flex;
+    justify-content: center;
+    background-color:rgba(254, 182, 0, 0.289) ;
+    border: solid;
+    border-color: rgb(1, 74, 138);
+    border-radius: 20px;
+    border-width: 2px;
+    width: 1000px;
+    height: 550px;
+    color:rgb(1, 74, 138) ;
+    font-size: 40px;
+    margin-top:5px ;
+    font-family: monospace;
+}
+#bodycont{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-size: cover;
+    background-image:url("https://avante.biz/wp-content/uploads/World-Map-Desktop-wallpaper-1920x1080/World-Map-Desktop-wallpaper-1920x108038.jpg") ;
+}
+#back{
+  size: cover;
+
+
+}
