@@ -120,6 +120,7 @@ function displayflag(){
     $("#p4")[0].textContent=propositions[count].props[3]
 }
 console.log()
+displayflag()
 
 var buttons=$(".prop1")
 buttons.on("click",function(){
@@ -161,7 +162,7 @@ next.on("click",function(){
         alert("you win,your score is "+score)
     
     })
-displayflag()
+
 
 $("#hint").attr("src","hint1.png");
 $("#hint").on("click",function(){
