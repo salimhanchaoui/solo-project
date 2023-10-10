@@ -88,19 +88,19 @@ next.on("click",function(){
 })
 /*obj key danemark*/
 var propositions=[
-    {flag:"https://th.bing.com/th/id/OIP.JoenChSAZlRtogGHCIELqgHaE7?pid=ImgDet&rs=1",
+    {flag:"./images/Denmark-Official-Government-Flags_206_F.jpg",
      corranswer:"Denmark",
      props:["Denmark","Tunisia","Switzerland","Uganda"]
 },
-{flag:"https://www.publicdomainpictures.net/pictures/250000/velka/sweden-flag.jpg",
+{flag:"./images/sweden-flag.jpg",
 corranswer:"Sweden",
 props:["Austri","Bhutan","Jamaica","Sweden"]
 },
-{flag:"https://th.bing.com/th/id/R.050af32191d31ac1bbbd52b869949ed5?rik=PaE3e4NuGKVjWw&riu=http%3a%2f%2fwww.printableflags.net%2fwp-content%2fuploads%2f2017%2f04%2fflag-norway-050af32191d31ac1bbbd52b869949ed5-NhCMBD.jpg&ehk=tQSseDpAO7YnUjYgMsYliy4Vq3Tg7IpMHzuQAz9DF8Y%3d&risl=&pid=ImgRaw&r=0",
+{flag:"./images/R.png",
 corranswer:"Norway",
 props:["Brazil","Norway","Jordan","turkey"]
 },
-{flag:"https://th.bing.com/th/id/R.035cb9c36cc9a2806093efa2a0f13042?rik=tVj0Wrly8A473g&riu=http%3a%2f%2fwww.theflagman.co.uk%2fwp-content%2fuploads%2f2017%2f03%2fflag-of-Cyprus.jpg&ehk=0wDwaBsuRCAr54ga2pZPklXpxm6QUF211rWaV55Y09o%3d&risl=&pid=ImgRaw&r=0",
+{flag:"./images/R.jpg",
 corranswer:"Cyprus",
 props:["Estonia","Maldives","Cyprus","Mozambique"]
 }
@@ -110,6 +110,7 @@ var count=0
 var score=0
 var tries=3
 var check=false
+var useHint=false
 
 function displayflag(){
     $("#gameimg")[0].src=propositions[count].flag
@@ -118,6 +119,7 @@ function displayflag(){
     $("#p3")[0].textContent=propositions[count].props[2]
     $("#p4")[0].textContent=propositions[count].props[3]
 }
+console.log()
 
 var buttons=$(".prop1")
 buttons.on("click",function(){
@@ -152,7 +154,25 @@ next.on("click",function(){
         buttons.css({"background-color": "lightgray"})
         check=false
     }
-   else
+    else if(useHint){
+        console.log(score)
+         alert("you win,your score is "+(score-0.5)+" because you used Hint") }
+    else
         alert("you win,your score is "+score)
+    
     })
 displayflag()
+
+$("#hint").attr("src","hint1.png");
+$("#hint").on("click",function(){
+    useHint=true
+    $("#hint").attr("src","hint.png");
+    if (count===0)
+    $("#1").css({"background-color": "#7cec00"})
+    if (count===1)
+    $("#4").css({"background-color": "#7cec00"})
+    if (count===2)
+    $("#2").css({"background-color": "#7cec00"})
+    if (count===3)
+    $("#3").css({"background-color": "#7cec00"})
+}) 
